@@ -8,7 +8,7 @@ Possible solutions:
 
 - create common superclasses (_cumbersome_ and sometimes meaningless)
 
-- use `owl:unionOfì` (OWL Lite+)
+- use `owl:unionOf` (OWL Lite+)
 
 ```SPARQL
 las:myProperty rdfs:domain [
