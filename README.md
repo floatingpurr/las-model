@@ -1,2 +1,3 @@
-# las-model
-Semantic data model backing the LAS
+# The LAS Data Model
+
+Semantic data model backing the LAS. More info coming soon...

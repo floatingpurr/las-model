@@ -1,0 +1,54 @@
+
+@prefix : <http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50> .
+
+<http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50> rdf:type owl:Ontology .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#BlueProp
+:BlueProp rdf:type owl:DatatypeProperty ;
+          rdfs:domain :BlueContainer .
+
+
+###  http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#Shape
+:Shape rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Container .
+
+###  http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#Strain
+:Strain rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Mouse .
+
+###  http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#A_bioentity_prop
+:A_bioentity_prop rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Bioentity .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#BlueContainer
+:BlueContainer rdf:type owl:Class ;
+               rdfs:subClassOf :Container .
+
+
+###  http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#Container
+:Container rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#Bioentity
+:Bioentity rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/andrea/ontologies/2019/6/untitled-ontology-50#Mouse
+:Mouse rdf:type owl:Class ;
+     rdfs:subClassOf :Container ,
+                     :Bioentity .
